@@ -6,13 +6,16 @@
 /*   By: patigunt <patigunt@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/09/16 10:57:26 by patigunt          #+#    #+#             */
-/*   Updated: 2018/09/28 12:30:56 by patigunt         ###   ########.fr       */
+/*   Updated: 2018/11/15 13:40:00 by patigunt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <stdlib.h>
+# include <unistd.h>
+# define BUFF_SIZE 32
+# define MALLCHECK(x) if (!x) return (-1);
 
 char			*ft_strsome(size_t size, char c);
 int				ft_countwords(char const *str, char c);
@@ -85,5 +88,7 @@ void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstadd(t_list **alst, t_list *n);
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+int				get_next_line(const int fd, char **line);
 
 #endif

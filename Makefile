@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: patigunt <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: patigunt <patigunt@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/16 10:59:40 by patigunt          #+#    #+#              #
-#    Updated: 2018/10/31 16:49:37 by patigunt         ###   ########.fr        #
+#    Updated: 2018/11/15 13:43:19 by patigunt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -72,7 +72,8 @@ ft_strstr.c \
 ft_strsub.c \
 ft_strtrim.c \
 ft_tolower.c \
-ft_toupper.c
+ft_toupper.c \
+get_next_line.c
 
 all: $(NAME)
 
